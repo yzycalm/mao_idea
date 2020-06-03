@@ -1,0 +1,372 @@
+@import 'variables';
+@import 'global';
+@import 'scroll';
+@import 'table';
+@import 'login';
+@import 'icons';
+@import 'button';
+@import 'modal';
+@import 'menu';
+@import 'banner';
+@import 'card';
+@import 'img';
+@import 'utils-text';
+@import 'utils-color';
+@import 'utils-size';
+@import 'utils-border';
+@import 'utils-spacing';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#root {
+    height: 100%;
+}
+
+.ant-layout {
+    height: 100%;
+
+    .logo {
+        height: 32px;
+        background: #ffffff;
+        border-radius: 6px;
+        margin: 16px;
+    }
+
+    .ant-layout-sider-collapsed {
+        .anticon {
+            font-size: 16px;
+            // margin-left: 8px;
+        }
+
+        .nav-text {
+            display: none;
+        }
+
+        .ant-menu-submenu-vertical > .ant-menu-submenu-title:after {
+            display: none;
+        }
+
+        .ant-menu-dark:not(.ant-menu-inline) .ant-menu-submenu-open {
+            color: inherit;
+        }
+    }
+
+    p {
+        margin: 10px 0 10px 0;
+    }
+}
+
+.gutter-example {
+    .ant-row {
+        //margin-left: 0 !important;
+        //margin-right: 0 !important;
+        > div {
+            background: transparent;
+            border: 0;
+        }
+    }
+}
+
+.gutter-box {
+    padding: 5px 0;
+}
+
+:global {
+    .ant-card-head-title {
+        font-size: 14px !important;
+    }
+    .my_upload{
+        .ant-upload-select-picture-card{
+        height: 60px;
+    }
+    .ant-upload-list-item{
+        height: 60px;
+    }
+    }
+    .my_upload_top{
+        .ant-upload-select-picture-card{
+        height: 128px;
+    }
+    .ant-upload-list-item{
+        height: 128px;
+    }
+    }
+    
+    
+}
+
+.DraftEditor-root {
+    line-height: 132% !important;
+}
+
+.public-DraftStyleDefault-block {
+    margin: 0 !important;
+}
+
+.my_type {
+    position: relative;
+    cursor: pointer;
+}
+
+.select_goods {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(252; 96; 96; 0.9);
+    cursor: pointer;
+    display: none;
+
+    span {
+        margin-right: 0 !important;
+    }
+}
+
+.select_goods_item {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(120; 120; 120; 0.9);
+    cursor: pointer;
+    display: none;
+
+    span {
+        margin-right: 0 !important;
+    }
+}
+
+.barText {
+    width: 100%;
+    height: 6px;
+    background-color: #ffd4be;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.bartrue {
+    // width: 80%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #fe4800;
+}
+
+.my_type:hover {
+    .select_goods {
+        display: block;
+    }
+}
+
+.my_type_item:hover {
+    .select_goods_item {
+        display: block;
+    }
+}
+
+.my_type_item .ant-card-body {
+    padding: 8px 0 8px 20px;
+}
+
+.my_type_item .ant-card-body span {
+    margin-right: 20px;
+}
+
+.my_type .ant-card-body {
+    padding: 8px 0 8px 10px;
+}
+
+.my_type .ant-card-body span {
+    margin-right: 20px;
+}
+
+.my_handle .ant-card-body {
+    padding: 2px;
+}
+
+.my_handle span:first-child {
+    float: right;
+    padding: 15px 30px;
+    background: #fc3e29;
+    color: #fff;
+    cursor: pointer;
+}
+
+.my_handle span:last-child {
+    float: right;
+    padding: 15px 30px;
+    background: #eeeef0;
+    cursor: pointer;
+}
+
+.select_item {
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: 1px dashed #fafafa;
+}
+
+.select_item:hover {
+    border: 1px dashed #598eba;
+}
+
+.active_item {
+    border: 1px dashed #598eba;
+}
+
+.my_card {
+    cursor: pointer;
+}
+
+
+.my_card:hover {
+    .delete {
+        display: inline-block;
+    }
+}
+
+.delete {
+    display: none;
+}
+
+.my_card:hover {
+    background: #fafafc;
+}
+
+.my_goods .ant-card-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0 8px 20px;
+}
+
+.my_goods .ant-card-body div {
+    display: inline-block;
+}
+
+.my_goods_btn span:first-child {
+    float: right;
+    padding: 15px 30px;
+    background: #fc3e29;
+    color: #fff;
+    cursor: pointer;
+}
+
+.my_goods_btn span:last-child {
+    float: right;
+    padding: 15px 30px;
+    background: #eeeef0;
+    cursor: pointer;
+}
+
+.my_goods .ant-card-body:before {
+    content: none;
+}
+
+.my_goods .ant-card-body:after {
+    content: none;
+}
+
+// 切换换行
+.word_break {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.word_break_proposal {
+
+    width: 180px;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    
+    
+    cursor:'pointer'
+
+    // word-wrap: break-word;
+    // word-break: break-all;
+    
+}
+
+.omit-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.imgbox {
+    float:left;
+    position:relative; 
+    margin: 0 10px 10px 0;
+    box-sizing:border-box;
+   span{
+        background:#545454;
+        color:white;
+        position:absolute;
+        height:20px;
+        width: 100%;
+        text-align:center;
+        bottom:0;
+        left:0;
+        font-size:12px;
+        display:none;
+        line-height:20px
+   }
+}
+.imgbox:hover {
+    cursor: pointer;
+    span{
+        display: block !important;
+    }
+}
+.checkIcon {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+/deep/ .ant-upload-select-picture-card{
+    position: relative;
+}
+.UploadBox:hover {
+    .tip-checked{
+        display: block !important;
+    }
+}
+.tip-checked{
+    background:#545454;
+    color:#fff;
+    position:absolute;
+    height:20px;
+    width: 100px;
+    text-align:center;
+    bottom:0;
+    font-size:12px;
+    // display:none;
+    line-height:20px;
+    z-index: 100000;
+}
+.imgbox .block{
+    display: block;
+}
+.imgbox .none{
+    display: none;
+}
